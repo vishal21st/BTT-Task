@@ -93,7 +93,7 @@ h1{
 }
 
 h2{
-    font-size:25px;
+    font-size:24px;
 }
 
 h3{
@@ -113,10 +113,16 @@ h6{
 }
 
 p{
-    font-size:16px;
-    color:#B2B7DF;
+    font-size:12px;
+   /* color:#B2B7DF;*/
+    color:#FEFEFF;
+    line-height: 1.4;
     text-align:left;
-    
+    height: 97px;
+    overflow: hidden;
+}
+p:after {
+    content: "...";
 }
 
 .ctgry-title{
@@ -142,8 +148,10 @@ color:#B2B7DF;
 /* responsive grid style */
 
 .medium-div{
+    min-height:428px;
+    min-width:529px;
     width:49%;
-    margin:1% 1% 1% 0;
+    margin:.5% 1% .5% 0;
 }
 
 .large-div{
@@ -152,8 +160,10 @@ color:#B2B7DF;
 }
 
 .small-div{
+    min-width:259px;
+    min-height:428px;
     width:24%;
-    margin:1% 1% 1% 0;
+    margin:.5% 1% .5% 0;
 }
 .tile{
     display:inline-block;
@@ -199,9 +209,13 @@ header{
 }
 #logo{
     float:left;
-    padding:7px 0 15px 20px;
+    padding:7px 0 10px 20px;
 }
-
+#logo h1{
+    font-family:"robotoBlack-regular";
+    display:inline-block;
+    font-size:12px;
+}
 .circle-wrapper{
     display:inline-block;
     padding-top:10px;
@@ -209,6 +223,7 @@ header{
 #subscribe-wrapper{
     float:right;
     background:#5A5F89;
+    overflow:hidden;
 }
 #subscribe-wrapper span{
     display:inline-block;
@@ -218,11 +233,20 @@ header{
     padding-left:20px;
     width:250px;
 }
+#subscribe-wrapper span input{
+    border-style:none;
+    background:transparent;
+    outline:none;
+    position:relative;
+    top:-5px;
+    color:#AFB3CC;
+}
 #subscribe-wrapper a{
     background:url("images/check.gif");
     display:inline-block;
     width:50px;
     height:50px;
+    float:right;
 }
 
 .main-wrapper{
@@ -231,78 +255,233 @@ header{
     margin:auto;
     padding:50px 0 50px 0;
     overflow:hidden;
-    
 }
 
 .main-wrapper article{
     background:#5A5F89;
-    padding:20px 10px;
+    padding:20px 20px;
 }
-
+.title{
+    color:#B0B5DE;
+}
 .avatar,.time{
     display:inline-block;
     margin-right:20px;
+    color:#B0B5DE;
+    overflow:hidden;
 }
 .avatar:before{
     content:"";
     background:url("images/avatar.gif") center no-repeat;
-    background-size:12px;
+    background-size:11px;
     width:15px;
     height:14px;
     display:inline-block;
     margin-right:10px;
+    float:left;
 }
 
 .time:before{
     content:"";
     background:url("images/clock.gif") center no-repeat;
-    background-size:12px;
+    background-size:11px;
     width:15px;
     height:14px;
     display:inline-block;
     margin-right:10px;
+    float:left;
 }
 .image-div{
-height:155px;
-width:100%;
+    height:155px;
+    width:100%;
 }
 #OfficeHour-section .image-div{
     background:url("images/officeHours.gif") center no-repeat;
     background-size:cover;
 }
+#OfficeHour-section article .title:before{
+    content:"";
+    width:5px;
+    height:5px;
+    border-radius:5px;
+    border:2px solid #B0B5DE;
+    display:inline-block;
+    margin-right:5px;
+}
 #libraryUpdate-section .image-div{
     background:url("images/libraryImg.gif") center no-repeat;
     background-size:cover;
 }
+#libraryUpdate-section article .title:before{
+    content:"";
+    width:5px;
+    height:5px;
+    border-radius:5px;
+    border:2px solid #FBCA1B;
+    display:inline-block;
+    margin-right:5px;
+}
+
 #cultureTeam-section .image-div{
     background:url("images/culturalTeam.gif") center no-repeat;
     background-size:cover;
 }
+#cultureTeam-section article .title:before{
+    content:"";
+    width:5px;
+    height:5px;
+    border-radius:5px;
+    border:2px solid #928AA1;
+    display:inline-block;
+    margin-right:5px;
+}
+
 #video-section .image-div{
     background:url("images/videoImage.gif") center no-repeat;
     background-size:cover;
 }
+#video-section article .title:before{
+    content:"";
+    width:5px;
+    height:5px;
+    border-radius:5px;
+    border:2px solid #ED7189;
+    display:inline-block;
+    margin-right:5px;
+}
+
 #productLaunch-section .image-div{
     background:url("images/productLaunch.gif") center no-repeat;
     background-size:cover;
+}
+#productLaunch-section article .title:before{
+    content:"";
+    width:5px;
+    height:5px;
+    border-radius:5px;
+    border:2px solid #2CC5CD;
+    display:inline-block;
+    margin-right:5px;
+}
+#mixpanel-section article{
+    min-height:388px;
+}
+
+#mixpanel-section h2{
+    margin-top:20px;
 }
 
 #face-section .image-div{
     background:url("images/face.gif") center no-repeat;
     background-size:cover;
 }
+#face-section article .title:before{
+    content:"";
+    width:5px;
+    height:5px;
+    border-radius:5px;
+    border:2px solid #777599;
+    display:inline-block;
+    margin-right:5px;
+}
+
 #trend-section .image-div{
     background:url("images/trend.gif") center no-repeat;
     background-size:cover;
 }
+#trend-section article .title:before{
+    content:"";
+    width:5px;
+    height:5px;
+    border-radius:5px;
+    border:2px solid #5CA8F3;
+    display:inline-block;
+    margin-right:5px;
+}
+
 .ddc-section .image-div{
     background:url("images/ddc.gif") center no-repeat;
     background-size:cover;
 }
+.ddc-section article  .title:before{
+    content:"";
+    width:5px;
+    height:5px;
+    border-radius:5px;
+    border:2px solid #F2F5FC;
+    display:inline-block;
+    margin-right:5px;
+}
+
 .button{
-background:#b2b7df;
-border-radius:2px;
-display:inline-block;
-font-size:10px;
-padding:10px;
+    background:#AA8ED9;
+    border-radius:2px;
+    display:inline-block;
+    font-size:10px;
+    font-family:"robotoBlack-bold";
+    padding:15px 10px;
+    margin-top:20px;
+}
+
+/*  media queries */
+
+/* large screens*/
+
+@media all and (max-width:1360px){
+    .medium-div{
+        width:99%;
+        min-width:none;
+    }
+    .image-div{
+        min-height:260px;
+    }
+    .small-div{
+        width:49%;
+        min-width:none;
+    }
+    #mixpanel-section article{
+        min-height:463px;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:1076px){
+    #mixpanel-section article{
+        min-height:492px;
+    }
+}
+/* large screens*/
+@media all and (max-width:768px)
+{
+   .medium-div{
+       min-width:350px; 
+       width:99%;
+        
+   } 
+
+   .image-div{
+        min-height:225px;
+   }
+   .small-div{
+       min-width:350px; 
+       width:99%;
+       
+   }
+   #mixpanel-section article{
+        min-height:430px;
+   }
+}
+
+/* small screens*/
+@media all and (max-width:480px){
+    
+    #logo{
+        float:none;
+        text-align:center;
+    }
+    #subscribe-wrapper{
+        width:350px;
+        margin:0 auto 10px auto;
+        overflow:hidden;
+        float:none;
+    }
 }
