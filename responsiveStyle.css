@@ -62,7 +62,7 @@
     }
     
     .small-div{
-        width:220px;
+       min-width:220px;
     }
     .second-tile{
     margin-right:0;
@@ -83,8 +83,9 @@
     }
 
     #subscribe-wrapper{
-        width:372px;
-        float:none;
+         min-width:372px;
+         max-width:372px;
+         float:none;
         margin:0 auto 10px auto;
     }
     .main-wrapper{
@@ -94,11 +95,13 @@
     .medium-div{
         width:100%;
         min-width:370px;
+        max-width:370px;
         margin:0 0 10px 0;
     }
     
     .small-div{
-        width:370px;
+        min-width:370px;
+        max-width:370px;
     }
     .second-tile{
     margin-right:0;
@@ -141,7 +144,7 @@
     }
     
     .small-div{
-        width:260px;
+        min-width:260px;
     }
     .second-tile{
     margin-right:0;
