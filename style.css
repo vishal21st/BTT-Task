@@ -156,21 +156,17 @@ color:#B2B7DF;
 
 .medium-div{
     min-height:428px;
-    min-width:528px;
+    min-width:524px;
     width:49%;
-    margin:.5% 1% .5% 0;
+    margin:0 10px 10px 0;
 }
 
-.large-div{
-    width:100%;
-    margin:1% 0;
-}
 
 .small-div{
-    min-width:258px;
+    min-width:257px;
     min-height:428px;
     width:24%;
-    margin:.5% 1% .5% 0;
+    margin:0 10px 10px 0;
 }
 .tile{
     display:inline-block;
@@ -194,7 +190,9 @@ header{
     margin:0 4px;
     float:left;
 }
-
+.right-tile{
+    margin-right:0;
+}
 .big-circle{
     display:inline-block;
     width:10px;
@@ -257,7 +255,7 @@ header{
 }
 
 .main-wrapper{
-    max-width:1300px;
+    max-width:1060px;
     width:80%;
     margin:auto;
     padding:50px 0 50px 0;
@@ -271,6 +269,7 @@ header{
 .title{
     color:#B0B5DE;
 }
+
 .avatar,.time{
     display:inline-block;
     margin-right:20px;
@@ -428,68 +427,4 @@ header{
     font-family:"robotoBlack-bold";
     padding:15px 10px;
     margin-top:20px;
-}
-
-/*  media queries */
-
-/* large screens*/
-
-@media all and (max-width:1360px){
-    .medium-div{
-        width:99%;
-        min-width:none;
-    }
-    .image-div{
-        min-height:260px;
-    }
-    .small-div{
-        width:49%;
-        min-width:none;
-    }
-    #mixpanel-section article{
-        min-height:463px;
-    }
-}
-
-@media all and (min-width:768px) and (max-width:1076px){
-    #mixpanel-section article{
-        min-height:492px;
-    }
-}
-/* large screens*/
-@media all and (max-width:768px)
-{
-   .medium-div{
-       min-width:350px; 
-       width:99%;
-        
-   } 
-
-   .image-div{
-        min-height:225px;
-   }
-   .small-div{
-       min-width:350px; 
-       width:99%;
-       
-   }
-   #mixpanel-section article{
-        min-height:430px;
-   }
-}
-
-/* small screens*/
-@media all and (max-width:480px){
-    
-    #logo{
-        float:none;
-        text-align:center;
-        margin-left:0;
-    }
-    #subscribe-wrapper{
-        width:350px;
-        margin:0 auto 10px auto;
-        overflow:hidden;
-        float:none;
-    }
 }
