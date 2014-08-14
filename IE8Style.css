@@ -1,0 +1,30 @@
+
+.main-wrapper{
+min-width:1200px;
+}
+.medium-div{
+    min-height:428px;
+    min-width:527px;
+    width:49%;
+    margin:.5% 1% .5% 0;
+}
+.small-div{
+    min-width:258px;
+    min-height:427px;
+    width:24%;
+    margin:.5% 1% .5% 0;
+}
+.image-div{
+	min-height:200px;
+}
+#mixpanel-section article{
+	min-height:440px;
+}
+.avatar:before{
+	width:22px;
+	height:18px;
+}
+.time:before{
+	width:22px;
+	height:20px;
+}

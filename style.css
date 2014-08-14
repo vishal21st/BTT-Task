@@ -149,7 +149,7 @@ color:#B2B7DF;
 
 .medium-div{
     min-height:428px;
-    min-width:529px;
+    min-width:528px;
     width:49%;
     margin:.5% 1% .5% 0;
 }
@@ -160,7 +160,7 @@ color:#B2B7DF;
 }
 
 .small-div{
-    min-width:259px;
+    min-width:258px;
     min-height:428px;
     width:24%;
     margin:.5% 1% .5% 0;
@@ -209,7 +209,7 @@ header{
 }
 #logo{
     float:left;
-    padding:7px 0 10px 20px;
+    margin-left:20px;
 }
 #logo h1{
     font-family:"robotoBlack-regular";
@@ -477,6 +477,7 @@ header{
     #logo{
         float:none;
         text-align:center;
+        margin-left:0;
     }
     #subscribe-wrapper{
         width:350px;
